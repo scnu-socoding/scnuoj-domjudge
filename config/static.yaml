@@ -1,0 +1,15 @@
+# Generated from 'static.yaml.in' on Mon 23 Nov 2020 08:09:03 PM UTC.
+
+parameters:
+    domjudge.version: 7.3.2
+    domjudge.bindir: /usr/bin
+    domjudge.etcdir: /etc/domjudge
+    domjudge.webappdir: /usr/share/domjudge/webapp
+    domjudge.libdir: /usr/share/domjudge
+    domjudge.sqldir: /usr/share/domjudge/sql
+    domjudge.libvendordir: /usr/share/domjudge/lib/vendor
+    domjudge.logdir: /var/log/domjudge/domserver
+    domjudge.rundir: /var/run/domjudge
+    domjudge.tmpdir: /tmp
+    domjudge.baseurl: https://example.com/domjudge/
+    domjudge.submitclient_enabled: yes
