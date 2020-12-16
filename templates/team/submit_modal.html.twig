@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">
-                    Submit
+                    Submit 提交代码评测
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -17,6 +17,10 @@
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             {% else %}
+                <div class="alert alert-info rounded-0">
+                    Please make sure that the filename of your code ONLY contains English letters and Arabic figures.<br>
+                    请确认文件名仅包含英文字母和阿拉伯数字，否则将无法提交。
+                </div>
                 {{ form_start(form) }}
                 <div class="modal-body">
                     {{ form_row(form.code) }}
