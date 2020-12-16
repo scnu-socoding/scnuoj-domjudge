@@ -8,22 +8,38 @@
 
 {% block content %}
 
-    <div class="container pt-5">
-        <h1 class="text-center">Print source</h1>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-center">Notice 注意</h3>
+                Due to technical reasons, please add a piece of comment at the beginning of your code to tell us your teamname and your detailed location (accurate to your seat number) if you wish to print your code. 
+                If you fail to do so, we may not be able to deliver the printed code to you.
+                Thank you for your understanding.<br>
+                由于技术原因，如果您需要代码打印服务，请在代码开头添加一段注释告知我们您的队伍名称、比赛时所在校区、机房和座位信息。
+                如果您没有添加上述信息，我们可能将无法把打印好的代码送达给您。
+                感谢您的理解。<br>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-center">Print source 代码打印服务</h3>
+                {% if success %}
+                    <div class="alert alert-success">File has been printed</div>
+                {% else %}
+                    <div class="alert alert-danger">Unknown error, please try again later</div>
+                {% endif %}
 
-        <!--
-            <pre class="output_text m-3">
-                {{ output }}
-            </pre>
-        -->
-
-        {% if success %}
-            <div class="alert alert-success">File has been printed</div>
-        {% else %}
-            <div class="alert alert-danger">Unknown error, please try again later</div>
-        {% endif %}
-
-        <a href="./" class="btn btn-secondary mt-3">Close</a>
+                <a href="./" class="btn btn-secondary mt-3">Close</a>
+            </div>
+        </div>
     </div>
+
+    <!--
+        <pre class="output_text m-3">
+            {{ output }}
+        </pre>
+    -->
 
 {% endblock %}
